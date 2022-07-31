@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/scrollbar';
-import { EffectCoverflow, Scrollbar, Mousewheel } from 'swiper';
+import 'swiper/css/effect-coverflow';
+import { Scrollbar, Mousewheel, EffectCoverflow } from 'swiper';
 import './swiper.css';
 
 const Projects = () => {
@@ -20,12 +20,15 @@ const Projects = () => {
 		<ul className={styles.projects}>
 			<Swiper
 				slidesPerView={width > 768 ? 3 : 1}
-				modules={[EffectCoverflow, Scrollbar, Mousewheel]}
-				effect={'coverflow'}
+				modules={[Scrollbar, Mousewheel, EffectCoverflow]}
 				spaceBetween={65}
 				scrollbar={{ draggable: true }}
-				mousewheel={{sensitivity: 0.1}}
-				
+				mousewheel={{ sensitivity: 0.1 }}
+				coverflowEffect={{
+					rotate: 20,
+					slideShadows: false,
+				}}
+				effect='coverflow'
 			>
 				{List.map((project) => (
 					<SwiperSlide>
