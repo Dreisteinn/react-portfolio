@@ -1,25 +1,24 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.a7d4feb2.css",
-    "main.js": "/react-portfolio/static/js/main.870fd200.js",
-    "static/media/Covid-Tracker.png": "/react-portfolio/static/media/Covid-Tracker.b14e5cbfbe7de6374bdf.png",
-    "static/media/Image-gallery.png": "/react-portfolio/static/media/Image-gallery.e59a577d4b76f18eb97b.png",
-    "static/media/Windbnb.png": "/react-portfolio/static/media/Windbnb.79b5058c8eba5b2bdbf8.png",
-    "static/media/space-tourism.png": "/react-portfolio/static/media/space-tourism.afd43e16710100040a1f.png",
-    "static/media/joblanding.png": "/react-portfolio/static/media/joblanding.94f575e803ea5fc9a3b2.png",
+    "main.js": "/react-portfolio/static/js/main.4d04419d.js",
     "static/media/yZ0DNKE-min.gif": "/react-portfolio/static/media/yZ0DNKE-min.23c749d24ca9886e54e7.gif",
-    "static/media/Pomodoro.png": "/react-portfolio/static/media/Pomodoro.a4928ffb1fd1764462ee.png",
-    "static/media/Todo.png": "/react-portfolio/static/media/Todo.80e17042a83bccd96dd6.png",
-    "static/media/Country-Quizz.png": "/react-portfolio/static/media/Country-Quizz.febb4d9ba5b606579a7c.png",
-    "static/media/virtual-keyboard.png": "/react-portfolio/static/media/virtual-keyboard.3001d438466943b7047c.png",
-    "static/media/Countries.png": "/react-portfolio/static/media/Countries.01e8450234cc23db9717.png",
-    "static/media/drum-machine.png": "/react-portfolio/static/media/drum-machine.eae04e01a6ede21b6bb7.png",
+    "static/media/Image-gallery.webp": "/react-portfolio/static/media/Image-gallery.124362a4180ebca701db.webp",
+    "static/media/Covid-Tracker.webp": "/react-portfolio/static/media/Covid-Tracker.e01e411af499ddee1def.webp",
+    "static/media/Windbnb.webp": "/react-portfolio/static/media/Windbnb.85728535ade2bf5047ac.webp",
+    "static/media/space-tourism.webp": "/react-portfolio/static/media/space-tourism.bf7a718232715b8c85a1.webp",
+    "static/media/Countries.webp": "/react-portfolio/static/media/Countries.aee1acc5a3aa2218fff8.webp",
+    "static/media/Country-Quizz.webp": "/react-portfolio/static/media/Country-Quizz.b973220dfcf13fb82bf9.webp",
+    "static/media/joblanding.webp": "/react-portfolio/static/media/joblanding.c2b0e54dd693c9d22d5e.webp",
+    "static/media/Pomodoro.webp": "/react-portfolio/static/media/Pomodoro.765f3a95177f3857e7b8.webp",
+    "static/media/Todo.webp": "/react-portfolio/static/media/Todo.8df8200f4192923cdc2f.webp",
+    "static/media/virtual-keyboard.webp": "/react-portfolio/static/media/virtual-keyboard.42c25c28e0ea96306081.webp",
     "index.html": "/react-portfolio/index.html",
     "main.a7d4feb2.css.map": "/react-portfolio/static/css/main.a7d4feb2.css.map",
-    "main.870fd200.js.map": "/react-portfolio/static/js/main.870fd200.js.map"
+    "main.4d04419d.js.map": "/react-portfolio/static/js/main.4d04419d.js.map"
   },
   "entrypoints": [
     "static/css/main.a7d4feb2.css",
-    "static/js/main.870fd200.js"
+    "static/js/main.4d04419d.js"
   ]
 }
