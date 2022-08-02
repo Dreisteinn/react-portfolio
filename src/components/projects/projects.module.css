@@ -232,7 +232,7 @@
 		height: var(--image-width);
 	}
 	.project img {
-		padding: 15px;
+		padding: 12px;
 	}
 	.dots {
 		bottom: 80px;

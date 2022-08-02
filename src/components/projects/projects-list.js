@@ -10,13 +10,6 @@ import { IoLogoJavascript as Js, IoLogoSass as Sass } from 'react-icons/io';
 
 const List = [
 	{
-		name: 'Aloha - Online shop',
-		techs: [<React />, <Firebase />, <Swiper />, <StyledComponents />],
-		demo: 'https://aloha-two.vercel.app/',
-		code: 'https://github.com/drainerr/Aloha',
-		image: require('../../images/projects/Aloha.webp'),
-	},
-	{
 		name: 'Image Gallery',
 		techs: [<React />, <Firebase />],
 		demo: 'https://image-gallery-olive.vercel.app/',
@@ -24,11 +17,11 @@ const List = [
 		image: require('../../images/projects/Image-gallery.webp'),
 	},
 	{
-		name: 'List Of Countries',
-		techs: [<React />],
-		demo: 'https://drainerr.github.io/Countries',
-		code: 'https://github.com/drainerr/Countries/tree/main/src',
-		image: require('../../images/projects/Countries.webp'),
+		name: 'Aloha - Online shop',
+		techs: [<React />, <Firebase />, <Swiper />, <StyledComponents />],
+		demo: 'https://aloha-two.vercel.app/',
+		code: 'https://github.com/drainerr/Aloha',
+		image: require('../../images/projects/Aloha.webp'),
 	},
 	{
 		name: 'Virtual Keyboard',
@@ -36,6 +29,13 @@ const List = [
 		demo: 'https://drainerr.github.io/Virtual-Keyboard/',
 		code: 'https://github.com/drainerr/Virtual-Keyboard/',
 		image: require('../../images/projects/virtual-keyboard.webp'),
+	},
+	{
+		name: 'List Of Countries',
+		techs: [<React />],
+		demo: 'https://drainerr.github.io/Countries',
+		code: 'https://github.com/drainerr/Countries/tree/main/src',
+		image: require('../../images/projects/Countries.webp'),
 	},
 	{
 		name: 'Arbeitnow Jobs',
