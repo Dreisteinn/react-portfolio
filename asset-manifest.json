@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.a7d4feb2.css",
-    "main.js": "/react-portfolio/static/js/main.73e8092e.js",
+    "main.css": "/react-portfolio/static/css/main.5027558e.css",
+    "main.js": "/react-portfolio/static/js/main.86321c40.js",
     "static/media/yZ0DNKE-min.gif": "/react-portfolio/static/media/yZ0DNKE-min.23c749d24ca9886e54e7.gif",
     "static/media/Image-gallery.webp": "/react-portfolio/static/media/Image-gallery.124362a4180ebca701db.webp",
     "static/media/Covid-Tracker.webp": "/react-portfolio/static/media/Covid-Tracker.e01e411af499ddee1def.webp",
-    "static/media/Aloha.webp": "/react-portfolio/static/media/Aloha.9f0e2854f1325f30da24.webp",
+    "static/media/Aloha.webp": "/react-portfolio/static/media/Aloha.156d41f253a6b6bc7034.webp",
     "static/media/Windbnb.webp": "/react-portfolio/static/media/Windbnb.85728535ade2bf5047ac.webp",
     "static/media/space-tourism.webp": "/react-portfolio/static/media/space-tourism.bf7a718232715b8c85a1.webp",
     "static/media/Countries.webp": "/react-portfolio/static/media/Countries.aee1acc5a3aa2218fff8.webp",
@@ -15,11 +15,11 @@
     "static/media/Todo.webp": "/react-portfolio/static/media/Todo.8df8200f4192923cdc2f.webp",
     "static/media/virtual-keyboard.webp": "/react-portfolio/static/media/virtual-keyboard.42c25c28e0ea96306081.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.a7d4feb2.css.map": "/react-portfolio/static/css/main.a7d4feb2.css.map",
-    "main.73e8092e.js.map": "/react-portfolio/static/js/main.73e8092e.js.map"
+    "main.5027558e.css.map": "/react-portfolio/static/css/main.5027558e.css.map",
+    "main.86321c40.js.map": "/react-portfolio/static/js/main.86321c40.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7d4feb2.css",
-    "static/js/main.73e8092e.js"
+    "static/css/main.5027558e.css",
+    "static/js/main.86321c40.js"
   ]
 }
