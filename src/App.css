@@ -60,12 +60,19 @@ a {
 	width: 25%;
 	backdrop-filter: blur(15px);
 	background-size: cover;
+	background-color: #3f2e366e;
 	background-blend-mode: multiply;
 	height: 100vh;
 	z-index: 2;
 	font-family: 'Quantico';
 	text-shadow: 1px 1px 5px black;
 	transition: 0.7s ease;
+}
+@supports (-moz-appearance: none) {
+	.navigation {
+		backdrop-filter: none;
+		background-color: #2e2126ef;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.navigation {
