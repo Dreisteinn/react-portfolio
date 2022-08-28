@@ -5,6 +5,7 @@ import {
 	SiFirebase as Firebase,
 	SiSwiper as Swiper,
 	SiStyledcomponents as StyledComponents,
+	SiRedux as Redux,
 } from 'react-icons/si';
 import { IoLogoJavascript as Js, IoLogoSass as Sass } from 'react-icons/io';
 
@@ -18,10 +19,17 @@ const List = [
 	},
 	{
 		name: 'Aloha - Online shop',
-		techs: [<React />, <Firebase />, <Swiper />, <StyledComponents />],
+		techs: [<React />, <Firebase />, <Swiper />],
 		demo: 'https://aloha-two.vercel.app/',
 		code: 'https://github.com/drainerr/Aloha',
 		image: require('../../images/projects/Aloha.webp'),
+	},
+	{
+		name: 'Envo - Personal Dictionary',
+		techs: [<React />, <Firebase />, <Redux />, <Sass />],
+		demo: 'https://envo-zeta.vercel.app/',
+		code: 'https://github.com/drainerr/Envo',
+		image: require('../../images/projects/Envo.webp'),
 	},
 	{
 		name: 'Virtual Keyboard',
@@ -78,13 +86,6 @@ const List = [
 		demo: 'https://drainerr.github.io/Space-Tourism/',
 		code: 'https://github.com/drainerr/Space-Tourism/tree/main/src',
 		image: require('../../images/projects/space-tourism.webp'),
-	},
-	{
-		name: 'Simple Todo',
-		techs: [<Html />, <Sass />, <Js />],
-		demo: 'https://drainerr.github.io/Simple-Todo/',
-		code: 'https://github.com/drainerr/Simple-Todo/',
-		image: require('../../images/projects/Todo.webp'),
 	},
 ];
 
