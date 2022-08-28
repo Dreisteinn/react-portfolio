@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.7bd74c11.css",
-    "main.js": "/react-portfolio/static/js/main.f754efa2.js",
+    "main.css": "/react-portfolio/static/css/main.7e712bee.css",
+    "main.js": "/react-portfolio/static/js/main.bf6c03d6.js",
     "static/media/yZ0DNKE-min.gif": "/react-portfolio/static/media/yZ0DNKE-min.23c749d24ca9886e54e7.gif",
     "static/media/Image-gallery.webp": "/react-portfolio/static/media/Image-gallery.124362a4180ebca701db.webp",
+    "static/media/Envo.webp": "/react-portfolio/static/media/Envo.1bdb6e9af0b4185fb8e0.webp",
     "static/media/Covid-Tracker.webp": "/react-portfolio/static/media/Covid-Tracker.e01e411af499ddee1def.webp",
     "static/media/Aloha.webp": "/react-portfolio/static/media/Aloha.156d41f253a6b6bc7034.webp",
     "static/media/Windbnb.webp": "/react-portfolio/static/media/Windbnb.85728535ade2bf5047ac.webp",
@@ -12,14 +13,13 @@
     "static/media/Country-Quizz.webp": "/react-portfolio/static/media/Country-Quizz.b973220dfcf13fb82bf9.webp",
     "static/media/joblanding.webp": "/react-portfolio/static/media/joblanding.c2b0e54dd693c9d22d5e.webp",
     "static/media/Pomodoro.webp": "/react-portfolio/static/media/Pomodoro.765f3a95177f3857e7b8.webp",
-    "static/media/Todo.webp": "/react-portfolio/static/media/Todo.8df8200f4192923cdc2f.webp",
     "static/media/virtual-keyboard.webp": "/react-portfolio/static/media/virtual-keyboard.42c25c28e0ea96306081.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.7bd74c11.css.map": "/react-portfolio/static/css/main.7bd74c11.css.map",
-    "main.f754efa2.js.map": "/react-portfolio/static/js/main.f754efa2.js.map"
+    "main.7e712bee.css.map": "/react-portfolio/static/css/main.7e712bee.css.map",
+    "main.bf6c03d6.js.map": "/react-portfolio/static/js/main.bf6c03d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bd74c11.css",
-    "static/js/main.f754efa2.js"
+    "static/css/main.7e712bee.css",
+    "static/js/main.bf6c03d6.js"
   ]
 }
