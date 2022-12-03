@@ -48,20 +48,6 @@ const List = [
 		image: require('../../images/projects/virtual-keyboard.webp'),
 	},
 	{
-		name: 'List Of Countries',
-		techs: [<React />],
-		demo: 'https://drainerr.github.io/Countries',
-		code: 'https://github.com/drainerr/Countries/tree/main/src',
-		image: require('../../images/projects/Countries.webp'),
-	},
-	{
-		name: 'Arbeitnow Jobs',
-		techs: [<React />, <Css />],
-		demo: 'https://drainerr.github.io/Arbeitnow-Jobs',
-		code: 'https://github.com/drainerr/Arbeitnow-Jobs/tree/main/src',
-		image: require('../../images/projects/joblanding.webp'),
-	},
-	{
 		name: 'Country Quizz',
 		techs: [<React />, <Css />],
 		demo: 'https://drainerr.github.io/Country-Quizz/',
