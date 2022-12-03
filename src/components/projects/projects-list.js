@@ -5,11 +5,20 @@ import {
 	SiFirebase as Firebase,
 	SiSwiper as Swiper,
 	SiStyledcomponents as StyledComponents,
+	SiExpress as Express,
+	SiMongodb as Mongo,
 	SiRedux as Redux,
 } from 'react-icons/si';
-import { IoLogoJavascript as Js, IoLogoSass as Sass } from 'react-icons/io';
+import { IoLogoJavascript as Js, IoLogoSass as Sass, IoLogoNodejs as Node } from 'react-icons/io';
 
 const List = [
+	{
+		name: 'Real Estate',
+		techs: [<Mongo />, <Express />, <React />, <Node />, <Sass />],
+		demo: 'https://real-estate-drainer.vercel.app/',
+		code: 'https://github.com/drainerr/real-estate-client',
+		image: require('../../images/projects/Real-Estate.png'),
+	},
 	{
 		name: 'Image Gallery',
 		techs: [<React />, <Firebase />],
@@ -65,27 +74,6 @@ const List = [
 		demo: 'https://drainerr.github.io/25-5-Clock/',
 		code: 'https://github.com/drainerr/25-5-Clock/',
 		image: require('../../images/projects/Pomodoro.webp'),
-	},
-	{
-		name: 'Covid-19 Tracker',
-		techs: [<Html />, <Sass />, <Js />],
-		demo: 'https://drainerr.github.io/Covid-19-Tracker/',
-		code: 'https://github.com/drainerr/Covid-19-Tracker/',
-		image: require('../../images/projects/Covid-Tracker.webp'),
-	},
-	{
-		name: 'Windbnb',
-		techs: [<React />, <Css />],
-		demo: 'https://drainerr.github.io/Windbnb/',
-		code: 'https://github.com/drainerr/Windbnb/tree/main/src',
-		image: require('../../images/projects/Windbnb.webp'),
-	},
-	{
-		name: 'Space Tourism',
-		techs: [<React />, <Sass />],
-		demo: 'https://drainerr.github.io/Space-Tourism/',
-		code: 'https://github.com/drainerr/Space-Tourism/tree/main/src',
-		image: require('../../images/projects/space-tourism.webp'),
 	},
 ];
 
