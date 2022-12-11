@@ -11,6 +11,14 @@
 	justify-content: center;
 	text-align: center;
 }
+p {
+	font-size: 22px;
+	text-align: left;
+}
+p > a {
+	font-weight: bold;
+}
+
 .user {
 	color: rgb(96, 155, 155);
 }
@@ -42,13 +50,13 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px 10px 0px 0px;
-	gap: 20px;
+	gap: 15px;
 	position: absolute;
 	left: 20px;
 }
 .about h1 {
-	font-size: 2.7rem;
-	text-shadow: 1px 1px black;
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 1px rgb(43, 43, 43);
 	font-family: 'Nunito';
 }
 .html,
@@ -57,39 +65,27 @@
 .bash,
 .linux,
 .js,
-.firebase {
+.firebase,
+.node {
 	font-size: 2.2rem;
+}
+.typescript {
+	font-size: 2rem;
 }
 .sass,
 .linux {
 	font-size: 2rem;
 }
-/* .css {
-  color: #2965f1;
-}
-.html {
-  color: #f06529;
-}
-.react {
-  color: #61dbfb;
-}
-.js {
-  color: yellow;
-  background-color: rgb(87, 87, 87);
-  padding: 3px;
-  border-radius: 2px;
-}
-.bash {
-  background-color: rgb(87, 87, 87);
-  padding: 3px;
-  border-radius: 2px;
-} */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 960px) {
 	.about {
 		width: 80%;
 		font-size: 1rem;
 		gap: 10px;
 		text-align: left;
+	}
+	p {
+		font-size: 20px;
 	}
 	.about h1 {
 		font-size: 1.8rem;
@@ -113,5 +109,15 @@
 	.js,
 	.firebase {
 		font-size: 1.5rem;
+	}
+	.typescript,
+	.node {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 620px) {
+	p {
+		font-size: 16px;
 	}
 }
