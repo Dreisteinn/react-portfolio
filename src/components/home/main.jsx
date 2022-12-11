@@ -6,7 +6,7 @@ const Main = () => {
 			<article>
 				<h1 className={styles.greeting}>Hey there!</h1>
 				<h3 className={styles.me}>
-					I'm <span>George Kvrivishvili</span>
+					I'm <span>George Kvrivishvili </span>
 				</h3>
 				<h4>a Front-End Web Developer</h4>
 			</article>
