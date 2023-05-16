@@ -7,6 +7,10 @@ import {
 	SiExpress as Express,
 	SiMongodb as Mongo,
 	SiRedux as Redux,
+	SiLaravel as Laravel,
+	SiVuedotjs as Vue,
+	SiTailwindcss as Tailwind,
+	SiAlpinedotjs as Alpine,
 } from 'react-icons/si';
 import { IoLogoJavascript as Js, IoLogoSass as Sass, IoLogoNodejs as Node } from 'react-icons/io';
 
@@ -17,6 +21,27 @@ const List = [
 		demo: 'https://re-geeko.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/real-estate-client',
 		image: require('../../images/projects/Real-Estate.png'),
+	},
+	{
+		name: 'Envo - Personal Dictionary',
+		techs: [<React />, <Firebase />, <Redux />, <Sass />],
+		demo: 'https://envo-geeko.vercel.app/',
+		code: 'https://github.com/GeekoIsaGeek/Envo',
+		image: require('../../images/projects/Envo.webp'),
+	},
+	{
+		name: 'Covid Statistics',
+		techs: [<Laravel />, <Tailwind />, <Alpine />],
+		demo: 'https://coronatime.giorgi-kvrivishvili.redberryinternship.ge/statistics/country',
+		code: '',
+		image: require('../../images/projects/Coronatime.png'),
+	},
+	{
+		name: 'Covid Questionnaire',
+		techs: [<Vue />, <Tailwind />],
+		demo: 'https://covid-questionnaire.vercel.app/',
+		code: 'https://github.com/GeekoIsaGeek/Covid-Questionnaire',
+		image: require('../../images/projects/Covid-Questionnaire.png'),
 	},
 	{
 		name: 'Image Gallery',
@@ -31,13 +56,6 @@ const List = [
 		demo: 'https://aloha-geeko.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/Aloha',
 		image: require('../../images/projects/Aloha.webp'),
-	},
-	{
-		name: 'Envo - Personal Dictionary',
-		techs: [<React />, <Firebase />, <Redux />, <Sass />],
-		demo: 'https://envo-geeko.vercel.app/',
-		code: 'https://github.com/GeekoIsaGeek/Envo',
-		image: require('../../images/projects/Envo.webp'),
 	},
 	{
 		name: 'Virtual Keyboard',
