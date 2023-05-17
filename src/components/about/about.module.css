@@ -75,19 +75,45 @@ p > a {
 .node,
 .laravel,
 .tailwind {
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 .typescript,
 .vue,
 .linux {
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 .linux {
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .sass {
-	font-size: 2.4rem;
+	font-size: 2.2rem;
+}
+@media only screen and (min-width: 1440px) {
+	.html,
+	.css,
+	.react,
+	.bash,
+	.linux,
+	.js,
+	.firebase,
+	.node,
+	.laravel,
+	.tailwind {
+		font-size: 2.4rem;
+	}
+	.typescript,
+	.vue,
+	.linux {
+		font-size: 2.2rem;
+	}
+
+	.linux {
+		font-size: 2rem;
+	}
+	.sass {
+		font-size: 2.6rem;
+	}
 }
 @media only screen and (min-width: 1366px) {
 	p {
@@ -112,6 +138,8 @@ p > a {
 		flex-direction: row;
 		bottom: 10px;
 		left: unset;
+		flex-wrap: wrap;
+		max-width: 80%;
 	}
 	.lastlet::after {
 		width: 25px;
