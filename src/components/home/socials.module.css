@@ -7,7 +7,7 @@
 	position: absolute;
 	bottom: 30px;
 	padding: 0 20px;
-	font-size: 2.2rem;
+	font-size: 2rem;
 	padding-top: 6px;
 }
 
@@ -28,6 +28,12 @@
 	transform: scale(1.2, 1.2);
 	/* transform: rotate(360deg); */
 	cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+	.list {
+		font-size: 2.4rem;
+	}
 }
 
 @media only screen and (max-width: 420px) {

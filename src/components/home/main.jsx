@@ -6,9 +6,10 @@ const Main = () => {
 			<article>
 				<h3 className={styles.greeting}>Hey there!</h3>
 				<h3 className={styles.me}>
-					I'm <span>George Kvrivishvili </span>
+					I'm <span>Giorgi Kvrivishvili </span>
 				</h3>
-				<h4>a Front-End Web Developer</h4>
+				<h4>a Full-Stack Web Developer</h4>
+				<h4>mainly focused on a client side</h4>
 			</article>
 			<Socials />
 		</main>

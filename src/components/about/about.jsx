@@ -3,9 +3,9 @@ import { SiGnubash, SiReact, SiCss3, SiHtml5, SiFirebase, SiTypescript } from 'r
 import { IoLogoJavascript, IoLogoSass } from 'react-icons/io';
 import { SiLaravel } from 'react-icons/si';
 import { SiVuedotjs } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
-import { SiTailwindcss } from 'react-icons/si';
 
 const skillsAsElements = [
 	<SiHtml5 className={styles.html} />,
@@ -30,7 +30,7 @@ const About = () => {
 				<span className={styles.lastlet}>i</span>
 			</h1>
 			<p>
-				I'm <strong>George Kvrivishvili</strong>, an Information Technology student who decided to learn Web
+				I'm <strong>Giorgi Kvrivishvili</strong>, an Information Technology student who decided to learn Web
 				Development and dive into that field. So far my knowledge covers the fundamentals of <b>HTML</b>, <b>CSS</b>{' '}
 				(SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>. Besides working on a
 				user interface, I can build REST APIs using <b>Node/Express</b> and <b>Laravel</b>. I strive to improve and
