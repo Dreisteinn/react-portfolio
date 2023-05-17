@@ -30,8 +30,8 @@ const Projects = () => {
 				}}
 				effect='coverflow'
 			>
-				{List.map((project) => (
-					<SwiperSlide>
+				{List.map((project, i) => (
+					<SwiperSlide key={i}>
 						<Project
 							name={project.name}
 							techs={project.techs}

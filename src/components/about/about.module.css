@@ -56,9 +56,10 @@ p > a {
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px 10px 0px 0px;
-	gap: 15px;
+	gap: 10px;
 	position: absolute;
 	left: 20px;
+	justify-content: center;
 }
 .about h1 {
 	font-size: 2.4rem;
@@ -75,19 +76,19 @@ p > a {
 .node,
 .laravel,
 .tailwind {
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 .typescript,
 .vue,
 .linux {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 
 .linux {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 .sass {
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 @media only screen and (min-width: 1440px) {
 	.html,
@@ -157,11 +158,11 @@ p > a {
 	.laravel,
 	.vue,
 	.sass {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 	.typescript,
 	.node {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 }
 
