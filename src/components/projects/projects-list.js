@@ -16,7 +16,16 @@ import { IoLogoJavascript as Js, IoLogoSass as Sass, IoLogoNodejs as Node } from
 
 const List = [
 	{
+		name: 'Epic Movie Quotes',
+		slug: 'epic-movie-quotes',
+		techs: [<Vue />, <Tailwind />, <Laravel />],
+		demo: '',
+		code: '',
+		image: require('../../images/projects/epic-movie-quotes.png'),
+	},
+	{
 		name: 'Real Estate (MERN)',
+		slug: 'real-estate',
 		techs: [<Mongo />, <Express />, <React />, <Node />, <Sass />],
 		demo: 'https://re-geeko.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/real-estate-client',
@@ -24,6 +33,7 @@ const List = [
 	},
 	{
 		name: 'Envo - Personal Dictionary',
+		slug: 'envo',
 		techs: [<React />, <Firebase />, <Redux />, <Sass />],
 		demo: 'https://envo-geeko.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/Envo',
@@ -32,6 +42,7 @@ const List = [
 	{
 		name: 'Covid Statistics',
 		techs: [<Laravel />, <Tailwind />, <Alpine />],
+		slug: 'covid-statistics',
 		demo: 'https://coronatime.giorgi-kvrivishvili.redberryinternship.ge/statistics/country',
 		code: '',
 		image: require('../../images/projects/Coronatime.png'),
@@ -39,6 +50,7 @@ const List = [
 	{
 		name: 'Covid Questionnaire',
 		techs: [<Vue />, <Tailwind />],
+		slug: 'covid-questionnaire',
 		demo: 'https://covid-questionnaire.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/Covid-Questionnaire',
 		image: require('../../images/projects/Covid-Questionnaire.png'),
@@ -46,6 +58,7 @@ const List = [
 	{
 		name: 'Image Gallery',
 		techs: [<React />, <Firebase />],
+		slug: 'image-gallery',
 		demo: 'https://image-gallery-geeko.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/Image-Gallery',
 		image: require('../../images/projects/Image-gallery.webp'),
@@ -56,6 +69,7 @@ const List = [
 		demo: 'https://aloha-geeko.vercel.app/',
 		code: 'https://github.com/GeekoIsaGeek/Aloha',
 		image: require('../../images/projects/Aloha.webp'),
+		slug: 'aloha',
 	},
 	{
 		name: 'Virtual Keyboard',
@@ -63,6 +77,7 @@ const List = [
 		demo: 'https://GeekoIsaGeek.github.io/Virtual-Keyboard/',
 		code: 'https://github.com/GeekoIsaGeek/Virtual-Keyboard/',
 		image: require('../../images/projects/virtual-keyboard.webp'),
+		slug: 'virtual-keyboard',
 	},
 	{
 		name: 'Country Quizz',
@@ -70,6 +85,7 @@ const List = [
 		demo: 'https://GeekoIsaGeek.github.io/Country-Quizz/',
 		code: 'https://github.com/GeekoIsaGeek/Country-Quizz/tree/main/src',
 		image: require('../../images/projects/Country-Quizz.webp'),
+		slug: 'country-quizz',
 	},
 	{
 		name: 'Pomodoro (25+5 Clock)',
@@ -77,6 +93,7 @@ const List = [
 		demo: 'https://GeekoIsaGeek.github.io/25-5-Clock/',
 		code: 'https://github.com/GeekoIsaGeek/25-5-Clock/',
 		image: require('../../images/projects/Pomodoro.webp'),
+		slug: 'pomodoro',
 	},
 ];
 

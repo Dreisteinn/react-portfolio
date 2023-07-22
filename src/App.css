@@ -43,7 +43,22 @@ a {
 	opacity: 1;
 	transform: scale(1.1, 1.1);
 }
-
+.demo_wrapper {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(15px);
+}
+.demo {
+	height: 80vh;
+	width: 94vw;
+	border-radius: 10px;
+	border: 3px solid rgba(37, 37, 37, 0.096);
+}
 @media screen and (max-width: 480px) {
 	.nav-toggle {
 		font-size: 2.2rem;
@@ -61,14 +76,14 @@ a {
 	width: 25%;
 	backdrop-filter: blur(30px);
 	background-size: cover;
-	background-color: rgb(22 13 13 / 50%);
+	background-color: rgb(22 14 14 / 39%);
 	background-blend-mode: multiply;
 	height: 100vh;
 	z-index: 2;
 	font-family: 'Quantico';
 	text-shadow: 1px 1px 5px black;
 	transition: 0.5s ease;
-	border-left: 1px solid #ffffff2e;
+	border-left: 1px solid #ffffff0f;
 }
 @supports (-moz-appearance: none) {
 	.navigation {

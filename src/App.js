@@ -6,6 +6,7 @@ import Navbar from './components/navbar/navbar';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import About from './components/about/about';
 import Projects from './components/projects/projects';
+import Demo from './components/demo';
 
 function App() {
 	const [isNavbarShown, setIsNavbarShown] = useState(false);
@@ -17,6 +18,7 @@ function App() {
 				<Route path='/' element={<Main />} />
 				<Route path='/About' element={<About />} />
 				<Route path='/Projects' element={<Projects />} />
+				<Route path='/Demo/:project' element={<Demo />} />
 				<Route path='*' element={<Navigate to='/' />} />
 			</Routes>
 		</div>
