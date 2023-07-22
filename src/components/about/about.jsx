@@ -30,11 +30,12 @@ const About = () => {
 				<span className={styles.lastlet}>i</span>
 			</h1>
 			<p>
-				I'm <strong>Giorgi Kvrivishvili</strong>, an Information Technology student who decided to learn Web
-				Development and dive into that field. So far my knowledge covers the fundamentals of <b>HTML</b>, <b>CSS</b>{' '}
-				(SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>. Besides working on a
-				user interface, I can build REST APIs using <b>Node/Express</b> and <b>Laravel</b>. I strive to improve and
-				broaden my skill set by working on personal projects. You can see some of them{' '}
+				I'm <strong>Giorgi Kvrivishvili</strong>, an Information Technology graduate who decided in 2021 to learn
+				Web Development and dive into that field. So far my knowledge covers the fundamental concepts of Web,{' '}
+				<b>HTML</b>, <b>CSS</b> (SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>.
+				I'm highly focused on building reactive client-side apps, but besides working on a user interface, I create
+				secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. I strive to improve and broaden my skill set
+				by working on various kinds of personal projects. You can see some of them{' '}
 				<Link to={'/projects'}>
 					<i>here</i>
 				</Link>

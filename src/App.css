@@ -19,7 +19,7 @@
 	font-family: 'Lora', serif;
 
 	background: url('./images/yZ0DNKE-min.gif') no-repeat fixed center;
-	background-color: #4f2f3099;
+	background-color: #29151599;
 	background-blend-mode: saturation;
 	background-size: cover;
 }
@@ -59,15 +59,16 @@ a {
 	align-items: center;
 	justify-content: center;
 	width: 25%;
-	backdrop-filter: blur(15px);
+	backdrop-filter: blur(30px);
 	background-size: cover;
-	background-color: #3f2e366e;
+	background-color: rgb(22 13 13 / 50%);
 	background-blend-mode: multiply;
 	height: 100vh;
 	z-index: 2;
 	font-family: 'Quantico';
 	text-shadow: 1px 1px 5px black;
-	transition: 0.7s ease;
+	transition: 0.5s ease;
+	border-left: 1px solid #ffffff2e;
 }
 @supports (-moz-appearance: none) {
 	.navigation {
