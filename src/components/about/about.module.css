@@ -14,9 +14,9 @@
 p {
 	font-size: 20px;
 	text-align: left;
-	background-color: rgba(0, 0, 0, 0.15);
-	backdrop-filter: blur(40px);
-	border: solid 2px #ffffff0f;
+	background-color: #73737317;
+	backdrop-filter: blur(50px);
+	border: solid 1px #ffffff1f;
 	padding: 1.7vw;
 	border-radius: 10px;
 }
