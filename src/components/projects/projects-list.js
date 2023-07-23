@@ -19,7 +19,7 @@ const List = [
 		name: 'Epic Movie Quotes',
 		slug: 'epic-movie-quotes',
 		techs: [<Vue />, <Tailwind />, <Laravel />],
-		demo: '',
+		demo: 'https://youtube.com/embed/Rw1v1Xqc1-c',
 		code: '',
 		image: require('../../images/projects/epic-movie-quotes.png'),
 	},

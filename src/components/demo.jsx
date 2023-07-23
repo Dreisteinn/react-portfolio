@@ -12,7 +12,7 @@ const Demo = () => {
 			<div className='demo_wrapper'>
 				<iframe
 					className='demo'
-					src='https://www.youtube.com/embed/Rw1v1Xqc1-c'
+					src={targetProject.demo}
 					title='YouTube video player'
 					frameBorder='0'
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
