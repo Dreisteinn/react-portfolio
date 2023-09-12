@@ -11,16 +11,25 @@ import {
 	SiVuedotjs as Vue,
 	SiTailwindcss as Tailwind,
 	SiAlpinedotjs as Alpine,
+	SiSocketdotio as SocketIO,
 } from 'react-icons/si';
 import { IoLogoJavascript as Js, IoLogoSass as Sass, IoLogoNodejs as Node } from 'react-icons/io';
 
 const List = [
 	{
-		name: 'Epic Movie Quotes',
+		name: 'Communicator (Real-time chat app)',
+		slug: 'communicator',
+		techs: [<React />, <Tailwind />, <Node />, <Express />, <SocketIO />, <Mongo />],
+		demo: 'https://youtube.com/embed/i2aJllBWpPg?si=5cEsHTgxBUCYGJj-"',
+		code: 'https://github.com/GeekoIsaGeek/communicator-front',
+		image: require('../../images/projects/communicator.png'),
+	},
+	{
+		name: 'Epic Movie Quotes (Real-time interactions)',
 		slug: 'epic-movie-quotes',
 		techs: [<Vue />, <Tailwind />, <Laravel />],
 		demo: 'https://youtube.com/embed/Rw1v1Xqc1-c',
-		code: '',
+		code: 'https://github.com/GeekoIsaGeek/epic-movie-quotes-front',
 		image: require('../../images/projects/epic-movie-quotes.png'),
 	},
 	{
