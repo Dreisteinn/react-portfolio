@@ -23,7 +23,7 @@
 	width: inherit;
 	height: inherit;
 	padding: 25px 0;
-	background-color: #4a3b44c9;
+	background-color: #4a3b4463;
 }
 .project:hover {
 	cursor: pointer;
@@ -44,7 +44,7 @@
 	overflow: hidden;
 }
 .details:hover {
-	background-color: #402f3af7;
+	background-color: #2f252bfa;
 }
 
 .details a {
@@ -55,10 +55,10 @@
 	border: 2px solid white;
 	background-color: rgba(0, 0, 0, 0.12);
 	color: white;
-	font-family: 'Quantico';
 	transition: 0.4s ease, color 0.25s linear, background 0.25s linear;
 	opacity: 0;
 	transform: translateX(-150px);
+	font-weight: bold;
 }
 .details a:nth-child(3) {
 	transition: 0.4s ease-out;
@@ -74,7 +74,6 @@
 
 .project h4 {
 	font-size: 1.7rem;
-	font-family: 'Quantico';
 	color: white;
 	position: absolute;
 	width: 100%;
@@ -92,7 +91,6 @@
 .title {
 	position: absolute;
 	font-size: 2.5rem;
-	font-family: 'Quantico';
 	top: 0;
 	display: none;
 }
@@ -111,7 +109,6 @@
 }
 .techs > li {
 	text-transform: capitalize;
-	font-family: 'Quantico';
 	font-size: 2rem;
 }
 .details:hover > .techs {

@@ -3,7 +3,6 @@
 	width: 60%;
 	color: white;
 	font-size: 1.45rem;
-	font-family: 'nunito';
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -14,20 +13,20 @@
 p {
 	font-size: 20px;
 	text-align: left;
-	background-color: #73737317;
-	backdrop-filter: blur(50px);
+	background-color: #73737303;
+	backdrop-filter: blur(40px);
 	border: solid 1px #ffffff1f;
 	padding: 1.7vw;
 	border-radius: 10px;
 }
 p > b {
-	color: lightgreen;
+	color: #ad7e9af2;
 }
 p > a {
 	font-weight: bold;
 }
 .user {
-	color: rgb(65, 131, 131);
+	color: #885b8d;
 }
 .lastlet {
 	position: relative;
@@ -38,7 +37,7 @@ p > a {
 	bottom: 10px;
 	left: 20px;
 	border-bottom: 2.5px white solid;
-	width: 25px;
+	width: 22px;
 	animation: lastletter 1.5s infinite;
 }
 @keyframes lastletter {
@@ -65,7 +64,7 @@ p > a {
 .about h1 {
 	font-size: 2.4rem;
 	text-shadow: 1px 1px 1px rgb(43, 43, 43);
-	font-family: 'Nunito';
+	font-family: 'Roboto Mono' 'monospace';
 }
 .html,
 .css,
@@ -124,7 +123,7 @@ p > a {
 }
 @media only screen and (max-width: 960px) {
 	.about {
-		width: 80%;
+		width: 90%;
 		font-size: 1rem;
 		gap: 10px;
 		text-align: left;
@@ -133,7 +132,7 @@ p > a {
 		font-size: 20px;
 	}
 	.about h1 {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	.skills {
 		gap: 10px;
@@ -144,9 +143,9 @@ p > a {
 		max-width: 80%;
 	}
 	.lastlet::after {
-		width: 25px;
-		left: 15px;
-		bottom: 10px;
+		width: 16px;
+		left: 12px;
+		bottom: 7px;
 	}
 	.html,
 	.css,
@@ -158,9 +157,7 @@ p > a {
 	.tailwind,
 	.laravel,
 	.vue,
-	.sass {
-		font-size: 1.4rem;
-	}
+	.sass,
 	.typescript,
 	.node {
 		font-size: 1.2rem;
@@ -170,6 +167,12 @@ p > a {
 @media (max-width: 620px) {
 	p {
 		font-size: 16px;
-		padding: 20px;
+		padding: 16px;
+	}
+}
+
+@media (max-height: 800px) {
+	.about {
+		margin-bottom: 60px;
 	}
 }

@@ -4,7 +4,7 @@ const Main = () => {
 	return (
 		<main className={styles.wrapper}>
 			<article>
-				<h3 className={styles.greeting}>Hey there!</h3>
+				<h3 className={styles.greeting}>Hi there!</h3>
 				<h3 className={styles.me}>
 					I'm <span>Giorgi Kvrivishvili </span>
 				</h3>

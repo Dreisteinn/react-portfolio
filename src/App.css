@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,600&family=Quantico:ital,wght@0,700;1,400&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&family=Noto+Sans+Georgian:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Overlock+SC&family=PT+Sans:wght@400;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+:root {
+	--primaryColor: ;
+}
+
 *,
 *::after,
 *::before {
@@ -16,11 +20,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Lora', serif;
-
-	background: url('./images/yZ0DNKE-min.gif') no-repeat fixed center;
-	background-color: #29151599;
-	background-blend-mode: saturation;
+	font-family: 'PT Sans', sans-serif;
+	background: url('./images/.potential-bg-images/Pixel-GIF-on-GIFER-by-Arcaneseeker.gif') no-repeat fixed center;
+	background-color: #2915156b;
+	background-blend-mode: luminosity;
 	background-size: cover;
 }
 a {
@@ -67,7 +70,8 @@ a {
 .navigation {
 	position: fixed;
 	right: -100%;
-	font-size: 2.2rem;
+	font-size: 2.5rem;
+	font-weight: 700;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -80,7 +84,6 @@ a {
 	background-blend-mode: multiply;
 	height: 100vh;
 	z-index: 2;
-	font-family: 'Quantico';
 	text-shadow: 1px 1px 5px black;
 	transition: 0.5s ease;
 	border-left: 1px solid #ffffff0f;
@@ -100,6 +103,9 @@ a {
 	}
 }
 @media only screen and (max-width: 768px) {
+	.nav-toggle {
+		font-size: 1.6rem;
+	}
 	.navigation {
 		font-size: 2.2rem;
 		width: 60%;
@@ -131,8 +137,7 @@ a {
 
 @media only screen and (max-width: 420px) {
 	.navigation {
-		font-size: 2rem;
-		width: 80%;
-		background-color: #362a318a;
+		font-size: 1.6rem;
+		width: 60%;
 	}
 }
