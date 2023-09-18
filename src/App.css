@@ -76,7 +76,7 @@ a {
 	width: 25%;
 	backdrop-filter: blur(50px);
 	background-size: cover;
-	background-color: #351d1d17;
+	background-color: #00000005;
 	background-blend-mode: multiply;
 	height: 100vh;
 	z-index: 2;

@@ -1,6 +1,6 @@
 .about {
 	border-radius: 5px;
-	width: 60%;
+	width: 50%;
 	color: white;
 	font-size: 1.45rem;
 	display: flex;
@@ -10,14 +10,19 @@
 	justify-content: center;
 	text-align: center;
 }
+.terminal_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 10px;
+	background-color: #0000007a;
+	backdrop-filter: blur(15px);
+	padding: 24px;
+	border-radius: 10px;
+}
 p {
 	font-size: 20px;
 	text-align: left;
-	background-color: #73737303;
-	backdrop-filter: blur(40px);
-	border: solid 1px #ffffff1f;
-	padding: 1.7vw;
-	border-radius: 10px;
 }
 p > b {
 	color: #ad7e9af2;
@@ -34,10 +39,10 @@ p > a {
 .lastlet::after {
 	content: '';
 	position: absolute;
-	bottom: 10px;
-	left: 20px;
+	bottom: 5px;
+	left: 26px;
 	border-bottom: 2.5px white solid;
-	width: 22px;
+	width: 16px;
 	animation: lastletter 1.5s infinite;
 }
 @keyframes lastletter {
@@ -62,8 +67,9 @@ p > a {
 	justify-content: center;
 }
 .about h1 {
-	font-size: 2.4rem;
+	font-size: 30px;
 	text-shadow: 1px 1px 1px rgb(43, 43, 43);
+	font-weight: normal;
 }
 .html,
 .css,
@@ -127,11 +133,9 @@ p > a {
 		gap: 10px;
 		text-align: left;
 	}
-	p {
+	p,
+	h1 {
 		font-size: 20px;
-	}
-	.about h1 {
-		font-size: 1.5rem;
 	}
 	.skills {
 		gap: 10px;
@@ -160,9 +164,26 @@ p > a {
 }
 
 @media (max-width: 620px) {
-	p {
+	p,
+	h1 {
 		font-size: 16px;
-		padding: 16px;
+	}
+	.terminal_wrapper {
+		gap: 5px;
+		padding: 14px;
+	}
+	.terminal_wrapper > h1 {
+		font-size: 20px;
+	}
+	.lastlet::after {
+		left: 18px;
+		width: 12px;
+	}
+}
+
+@media (max-width: 420px) {
+	.about {
+		width: 100%;
 	}
 }
 
