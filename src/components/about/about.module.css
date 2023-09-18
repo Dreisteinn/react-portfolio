@@ -64,7 +64,6 @@ p > a {
 .about h1 {
 	font-size: 2.4rem;
 	text-shadow: 1px 1px 1px rgb(43, 43, 43);
-	font-family: 'Roboto Mono' 'monospace';
 }
 .html,
 .css,
@@ -142,11 +141,7 @@ p > a {
 		flex-wrap: wrap;
 		max-width: 80%;
 	}
-	.lastlet::after {
-		width: 16px;
-		left: 12px;
-		bottom: 7px;
-	}
+
 	.html,
 	.css,
 	.react,
