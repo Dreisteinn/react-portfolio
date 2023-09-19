@@ -5,7 +5,7 @@ import { SiLaravel } from 'react-icons/si';
 import { SiVuedotjs } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import terminalLogo from '../../images/hyper-seeklogo.com.svg';
 
