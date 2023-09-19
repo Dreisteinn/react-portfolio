@@ -38,6 +38,7 @@
 }
 .minimized {
 	transition: transform 0.3s ease-out;
+	z-index: 10;
 	transform: translate(20%, 60vh) scale(0.1);
 }
 .terminal_logo {

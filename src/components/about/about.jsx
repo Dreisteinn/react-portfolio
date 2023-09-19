@@ -62,11 +62,11 @@ const About = () => {
 					</h1>
 					<p>
 						Giorgi Kvrivishvili is an Information Technology graduate who decided in 2021 to learn Web Development
-						and dive into that field. So far his knowledge covers the fundamental concepts of Web, <b>HTML</b>,
-						<b>CSS</b> (SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>. He's
-						highly focused on the frontend. However, besides working on reactive client-side apps, he also builds
-						secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. Giorgi strives to improve and broaden
-						his skill set by working on various kinds of personal projects.
+						and dive into the field. His knowledge covers the fundamental web concepts and the following
+						technologies: <b>HTML</b>, <b>CSS</b> (Sass,Tailwind), <b>Javascript</b>, <b>Typescript</b>,{' '}
+						<b>React</b>, and <b>Vue</b>. He's mainly focused on the front-end. However, besides building reactive
+						client-side apps, he crafts secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. Giorgi
+						strives to improve and broaden his skill set by working on various kinds of personal projects.
 					</p>
 					<h1>
 						:<span className={styles.user}>~</span>$ browse projec
