@@ -1,5 +1,5 @@
 import styles from './about.module.css';
-import { SiGnubash, SiReact, SiCss3, SiHtml5, SiTypescript } from 'react-icons/si';
+import { SiGnubash, SiReact, SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript, IoLogoSass } from 'react-icons/io';
 import { SiLaravel } from 'react-icons/si';
 import { SiVuedotjs } from 'react-icons/si';
@@ -10,14 +10,12 @@ import { useState } from 'react';
 import terminalLogo from '../../images/hyper-seeklogo.com.svg';
 
 const skillsAsElements = [
-	<SiHtml5 className={styles.html} />,
-	<SiCss3 className={styles.css} />,
-	<IoLogoSass className={styles.sass} />,
 	<SiTypescript className={styles.typescript} />,
 	<IoLogoJavascript className={styles.js} />,
 	<SiVuedotjs className={styles.vue} />,
 	<SiReact className={styles.react} />,
 	<SiTailwindcss className={styles.tailwind} />,
+	<IoLogoSass className={styles.sass} />,
 	<SiLaravel className={styles.laravel} />,
 	<GrNode className={styles.node} />,
 	<SiGnubash className={styles.bash} />,
@@ -58,7 +56,7 @@ const About = () => {
 						></div>
 					</div>
 					<h1>
-						:<span className={styles.user}>~</span>$ cat about
+						:<span className={styles.user}>~</span>$ cat bio
 					</h1>
 					<p>
 						Giorgi Kvrivishvili is an Information Technology graduate who decided in 2021 to learn Web Development
@@ -66,7 +64,7 @@ const About = () => {
 						technologies: <b>HTML</b>, <b>CSS</b> (Sass,Tailwind), <b>Javascript</b>, <b>Typescript</b>,{' '}
 						<b>React</b>, and <b>Vue</b>. He's mainly focused on the front-end. However, besides building reactive
 						client-side apps, he crafts secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. Giorgi
-						strives to improve and broaden his skill set by working on various kinds of personal projects.
+						strives to improve and broaden his skill set by working on various kinds of side projects.
 					</p>
 					<h1>
 						:<span className={styles.user}>~</span>$ browse projec
