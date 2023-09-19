@@ -1,5 +1,5 @@
 import styles from './about.module.css';
-import { SiGnubash, SiReact, SiCss3, SiHtml5, SiFirebase, SiTypescript } from 'react-icons/si';
+import { SiGnubash, SiReact, SiCss3, SiHtml5, SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript, IoLogoSass } from 'react-icons/io';
 import { SiLaravel } from 'react-icons/si';
 import { SiVuedotjs } from 'react-icons/si';
@@ -13,14 +13,13 @@ const skillsAsElements = [
 	<SiHtml5 className={styles.html} />,
 	<SiCss3 className={styles.css} />,
 	<IoLogoSass className={styles.sass} />,
+	<SiTypescript className={styles.typescript} />,
 	<IoLogoJavascript className={styles.js} />,
 	<SiVuedotjs className={styles.vue} />,
 	<SiReact className={styles.react} />,
 	<SiTailwindcss className={styles.tailwind} />,
 	<SiLaravel className={styles.laravel} />,
-	<SiTypescript className={styles.typescript} />,
 	<GrNode className={styles.node} />,
-	<SiFirebase className={styles.firebase} />,
 	<SiGnubash className={styles.bash} />,
 ];
 
