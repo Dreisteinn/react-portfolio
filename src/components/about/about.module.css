@@ -54,6 +54,7 @@
 p {
 	font-size: 20px;
 	text-align: left;
+	color: lightgray;
 }
 p > b {
 	color: #ad7e9af2;
