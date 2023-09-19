@@ -20,6 +20,7 @@
 	background-color: #2915156b;
 	background-blend-mode: luminosity;
 	background-size: cover;
+	overflow-y: hidden;
 }
 a {
 	text-decoration: none;

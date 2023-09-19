@@ -6,6 +6,8 @@ import { SiVuedotjs } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import terminalLogo from '../../images/hyper-seeklogo.com.svg';
 
 const skillsAsElements = [
 	<SiHtml5 className={styles.html} />,
@@ -24,6 +26,9 @@ const skillsAsElements = [
 
 const About = () => {
 	const navigate = useNavigate();
+	const [showTerminal, setShowTerminal] = useState(true);
+	const [maximize, setMaximize] = useState(false);
+	const [minimize, setMinimize] = useState(false);
 
 	const navigateToProjects = (e) => {
 		if (e.key === 'Enter') {
@@ -33,31 +38,56 @@ const About = () => {
 
 	return (
 		<div className={styles.about}>
-			<div className={styles.terminal_wrapper} tabIndex={-1} onKeyDown={navigateToProjects}>
-				<h1>
-					:<span className={styles.user}>~</span>$ cat about
-				</h1>
-				<p>
-					I'm Giorgi Kvrivishvili, an Information Technology graduate who decided in 2021 to learn Web Development
-					and dive into that field. So far my knowledge covers the fundamental concepts of Web, <b>HTML</b>,{' '}
-					<b>CSS</b> (SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>. I'm highly
-					focused on building reactive client-side apps, but besides working on a user interface, I create secure
-					REST APIs using <b>Node/Express</b> and <b>Laravel</b>. I strive to improve and broaden my skill set by
-					working on various kinds of personal projects. You can see some of them{' '}
-					<Link to={'/projects'}>
-						<i>here</i>
-					</Link>
-				</p>
-				<h1>
-					:<span className={styles.user}>~</span>$ cd projec
-					<span className={styles.lastlet}>ts</span>
-				</h1>
-			</div>
+			{showTerminal && (
+				<div
+					className={`${styles.terminal_wrapper} ${maximize && styles.maximized} ${minimize && styles.minimized}`}
+					tabIndex={-1}
+					onKeyDown={navigateToProjects}
+				>
+					<div className={styles.titlebar_buttons}>
+						<div
+							className={`${styles.close} ${styles.titlebar_button}`}
+							onClick={() => setShowTerminal((prev) => !prev)}
+						></div>
+						<div
+							className={`${styles.maximize} ${styles.titlebar_button}`}
+							onClick={() => setMaximize((prev) => !prev)}
+						></div>
+						<div
+							className={`${styles.minimize} ${styles.titlebar_button}`}
+							onClick={() => setMinimize((prev) => !prev)}
+						></div>
+					</div>
+					<h1>
+						:<span className={styles.user}>~</span>$ cat about
+					</h1>
+					<p>
+						Giorgi Kvrivishvili is an Information Technology graduate who decided in 2021 to learn Web Development
+						and dive into that field. So far his knowledge covers the fundamental concepts of Web, <b>HTML</b>,
+						<b>CSS</b> (SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>. He's
+						highly focused on the frontend. However, besides working on reactive client-side apps, he also builds
+						secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. Giorgi strives to improve and broaden
+						his skill set by working on various kinds of personal projects.
+					</p>
+					<h1>
+						:<span className={styles.user}>~</span>$ browse projec
+						<span className={styles.lastlet}>ts</span>
+					</h1>
+				</div>
+			)}
 			<ul className={styles.skills}>
 				{skillsAsElements.map((skill, i) => {
 					return <li key={i}>{skill}</li>;
 				})}
 			</ul>
+			{minimize && (
+				<img
+					src={terminalLogo}
+					alt='terminal'
+					className={styles.terminal_logo}
+					onClick={() => setMinimize((prev) => !prev)}
+				/>
+			)}
 		</div>
 	);
 };
