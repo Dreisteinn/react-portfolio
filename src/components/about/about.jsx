@@ -38,12 +38,12 @@ const About = () => {
 					:<span className={styles.user}>~</span>$ cat about
 				</h1>
 				<p>
-					I'm <strong>Giorgi Kvrivishvili</strong>, an Information Technology graduate who decided in 2021 to learn
-					Web Development and dive into that field. So far my knowledge covers the fundamental concepts of Web,{' '}
-					<b>HTML</b>, <b>CSS</b> (SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and{' '}
-					<b>Vue</b>. I'm highly focused on building reactive client-side apps, but besides working on a user
-					interface, I create secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. I strive to improve
-					and broaden my skill set by working on various kinds of personal projects. You can see some of them{' '}
+					I'm Giorgi Kvrivishvili, an Information Technology graduate who decided in 2021 to learn Web Development
+					and dive into that field. So far my knowledge covers the fundamental concepts of Web, <b>HTML</b>,{' '}
+					<b>CSS</b> (SASS/Tailwind), <b>Javascript</b>, <b>Typescript</b>, <b>React</b> and <b>Vue</b>. I'm highly
+					focused on building reactive client-side apps, but besides working on a user interface, I create secure
+					REST APIs using <b>Node/Express</b> and <b>Laravel</b>. I strive to improve and broaden my skill set by
+					working on various kinds of personal projects. You can see some of them{' '}
 					<Link to={'/projects'}>
 						<i>here</i>
 					</Link>
