@@ -23,7 +23,7 @@
 	width: inherit;
 	height: inherit;
 	padding: 25px 0;
-	background-color: #4a3b4463;
+	background-color: #25262cf2;
 }
 .project:hover {
 	cursor: pointer;
@@ -42,9 +42,12 @@
 	transition: 0.5s ease;
 	top: 0;
 	overflow: hidden;
+	border: 3px solid transparent;
+	transition: 0.2s linear;
 }
 .details:hover {
-	background-color: #2f252bfa;
+	background-color: #17171af7;
+	border-color: #363746;
 }
 
 .details a {

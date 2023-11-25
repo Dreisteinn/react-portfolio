@@ -94,8 +94,8 @@ a {
 }
 @supports (-moz-appearance: none) {
 	.navigation {
-		backdrop-filter: none;
-		background-color: #2e2126ef;
+		backdrop-filter: 5px;
+		background-color: #1f1f25b6;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -120,7 +120,7 @@ a {
 .navigation a:hover {
 	transform: scale(1.1, 1.1);
 	cursor: pointer;
-	background-color: #4c3443 !important;
+	background-color: #754e66 !important;
 }
 .toggler {
 	z-index: 2;
