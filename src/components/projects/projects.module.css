@@ -55,9 +55,9 @@
 	padding: 3px;
 	border-radius: 5px;
 	min-width: 50%;
-	border: 2px solid white;
+	border: 2px solid #494a5f;
 	background-color: rgba(0, 0, 0, 0.12);
-	color: white;
+	color: #a4a5bf;
 	transition: 0.4s ease, color 0.25s linear, background 0.25s linear;
 	opacity: 0;
 	transform: translateX(-150px);
@@ -71,13 +71,13 @@
 	opacity: 1;
 }
 .details a:hover {
-	background-color: white;
-	color: rgb(46, 45, 45);
+	background-color: #494a5f;
+	color: rgb(29, 29, 29);
 }
 
 .project h4 {
 	font-size: 1.7rem;
-	color: white;
+	color: #a4a5bf;
 	position: absolute;
 	width: 100%;
 	top: 10%;
@@ -106,7 +106,7 @@
 	width: 100%;
 	top: 80%;
 	opacity: 0;
-	color: white;
+	color: #a4a5bf;
 	transition: 0.3s ease;
 	transform: translateX(180px);
 }
