@@ -1,5 +1,3 @@
-import React from 'react';
-
 const iconStyles = {
 	height: '34px',
 };

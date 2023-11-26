@@ -64,7 +64,7 @@
 	font-weight: bold;
 }
 .details a:nth-child(3) {
-	transition: 0.4s ease-out;
+	transition: 0.25s ease-out;
 }
 .details:hover > a {
 	transform: translateX(0);
@@ -72,7 +72,7 @@
 }
 .details a:hover {
 	background-color: #494a5f;
-	color: rgb(29, 29, 29);
+	color: lavender;
 }
 
 .project h4 {

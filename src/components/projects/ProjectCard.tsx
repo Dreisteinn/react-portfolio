@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './projects.module.css';
+import styles from './Projects.module.css';
+import type { Project } from './Project.types';
 
-const Project = (props) => {
-	const { name, techs, code, demo, img, slug } = props;
+const ProjectCard = ({ name, techs, code, demo, image, slug }: Project) => {
 	return (
 		<li className={styles.project}>
-			<img src={img} alt={name} className={styles.img}></img>
+			<img src={image} alt={name} className={styles.img}></img>
 			<div className={styles.details}>
 				<h4>{name}</h4>
 				<a href={demo.startsWith('https://yout') ? `/demo/${slug}` : demo} target='_blank' rel='noreferrer'>
@@ -24,4 +24,4 @@ const Project = (props) => {
 	);
 };
 
-export default Project;
+export default ProjectCard;

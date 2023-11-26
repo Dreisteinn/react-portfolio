@@ -1,4 +1,4 @@
-import styles from './about.module.css';
+import styles from './About.module.css';
 import { SiGnubash, SiReact, SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript, IoLogoSass } from 'react-icons/io';
 import { SiLaravel } from 'react-icons/si';
@@ -7,6 +7,7 @@ import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import type { KeyboardEvent } from 'react';
 import terminalLogo from '../../images/hyper-seeklogo.com.svg';
 
 const skillsAsElements = [
@@ -27,7 +28,7 @@ const About = () => {
 	const [maximize, setMaximize] = useState(false);
 	const [minimize, setMinimize] = useState(false);
 
-	const navigateToProjects = (e) => {
+	const navigateToProjects = (e: KeyboardEvent) => {
 		if (e.key === 'Enter') {
 			navigate('/projects');
 		}

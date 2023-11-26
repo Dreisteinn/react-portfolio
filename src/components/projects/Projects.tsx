@@ -1,20 +1,28 @@
-import Project from './project-card';
-import styles from './projects.module.css';
-import List from './projects-list.ts';
-import { useState } from 'react';
-
+import Project from './ProjectCard';
+import styles from './Projects.module.css';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
-import { Scrollbar, Mousewheel, EffectCoverflow } from 'swiper';
+import { Scrollbar, Mousewheel, EffectCoverflow } from 'swiper/modules';
 import './swiper.css';
+import useProjectContext from '../../hooks/useProjectContext';
 
 const Projects = () => {
 	const [width, setWidth] = useState(window.innerWidth);
-	window.onresize = () => {
-		setWidth(window.innerWidth);
-	};
+	const { projects } = useProjectContext();
+
+	useEffect(() => {
+		window.addEventListener('resize', () => {
+			setWidth(window.innerWidth);
+		});
+
+		return () =>
+			window.removeEventListener('resize', () => {
+				setWidth(window.innerWidth);
+			});
+	}, []);
 
 	return (
 		<ul className={styles.projects}>
@@ -30,14 +38,14 @@ const Projects = () => {
 				}}
 				effect='coverflow'
 			>
-				{List.map((project, i) => (
+				{projects.map((project, i) => (
 					<SwiperSlide key={i}>
 						<Project
 							name={project.name}
 							techs={project.techs}
 							demo={project.demo}
 							code={project.code}
-							img={project.image}
+							image={project.image}
 							slug={project.slug}
 						/>
 					</SwiperSlide>

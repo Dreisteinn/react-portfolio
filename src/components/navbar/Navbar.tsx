@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
+import { Props } from './Navbar.types';
 
-const Navbar = (props) => {
-	const { getNavbar, setNavbar } = props;
+const Navbar = ({ getNavbar, setNavbar }: Props) => {
 	const handleClick = () => setNavbar((prev) => !prev);
 	return (
 		<div className={getNavbar ? 'navigation active' : 'navigation'}>

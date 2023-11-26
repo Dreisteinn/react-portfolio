@@ -1,5 +1,5 @@
 import { SiGithub, SiLinkedin, SiTwitter, SiGmail } from 'react-icons/si';
-import styles from './socials.module.css';
+import styles from './Socials.module.css';
 const Socials = () => {
 	return (
 		<ul className={styles.list}>

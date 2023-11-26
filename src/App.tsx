@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
-import HamburgerToggle from './components/navbar/hamburgerToggle';
-import Main from './components/home/main';
-import Navbar from './components/navbar/navbar';
-import About from './components/about/about';
-import Projects from './components/projects/projects';
-import Demo from './components/demo';
+import HamburgerToggle from './components/navbar/HamburgerToggle.tsx';
+import Main from './components/home/Main.tsx';
+import Navbar from './components/navbar/Navbar.tsx';
+import About from './components/about/About.tsx';
+import Projects from './components/projects/Projects.tsx';
+import Demo from './components/Demo.tsx';
 
 function App() {
 	const [isNavbarShown, setIsNavbarShown] = useState(false);

@@ -14,8 +14,9 @@ import {
 	SiSocketdotio as SocketIO,
 } from 'react-icons/si';
 import { IoLogoJavascript as Js, IoLogoSass as Sass, IoLogoNodejs as Node } from 'react-icons/io';
+import { Project } from '../components/projects/Project.types';
 
-const GetProjects = async () => {
+export const getProjects = async (): Promise<Project[]> => {
 	return [
 		{
 			name: 'Communicator (Real-time chat app)',
@@ -23,7 +24,7 @@ const GetProjects = async () => {
 			techs: [React, Tailwind, Node, Express, SocketIO, Mongo],
 			demo: 'https://youtube.com/embed/i2aJllBWpPg?si=5cEsHTgxBUCYGJj-"',
 			code: 'https://github.com/GeekoIsaGeek/communicator-front',
-			image: (await import('../../images/projects/communicator.png')).default,
+			image: (await import('../images/projects/communicator.png')).default,
 		},
 		{
 			name: 'Epic Movie Quotes (Real-time interactions)',
@@ -31,7 +32,7 @@ const GetProjects = async () => {
 			techs: [Vue, Tailwind, Laravel],
 			demo: 'https://youtube.com/embed/Rw1v1Xqc1-c',
 			code: 'https://github.com/GeekoIsaGeek/epic-movie-quotes-front',
-			image: (await import('../../images/projects/epic-movie-quotes.png')).default,
+			image: (await import('../images/projects/epic-movie-quotes.png')).default,
 		},
 		{
 			name: 'Real Estate (MERN)',
@@ -39,7 +40,7 @@ const GetProjects = async () => {
 			techs: [Mongo, Express, React, Node, Sass],
 			demo: 'https://re-geeko.vercel.app/',
 			code: 'https://github.com/GeekoIsaGeek/real-estate-client',
-			image: (await import('../../images/projects/Real-Estate.png')).default,
+			image: (await import('../images/projects/Real-Estate.png')).default,
 		},
 		{
 			name: 'Envo - Personal Dictionary',
@@ -47,7 +48,7 @@ const GetProjects = async () => {
 			techs: [React, Firebase, Redux, Sass],
 			demo: 'https://envo-geeko.vercel.app/',
 			code: 'https://github.com/GeekoIsaGeek/Envo',
-			image: (await import('../../images/projects/Envo.webp')).default,
+			image: (await import('../images/projects/Envo.webp')).default,
 		},
 		{
 			name: 'Covid Statistics',
@@ -55,7 +56,7 @@ const GetProjects = async () => {
 			slug: 'covid-statistics',
 			demo: 'https://coronatime.giorgi-kvrivishvili.redberryinternship.ge/statistics/country',
 			code: '',
-			image: (await import('../../images/projects/Coronatime.png')).default,
+			image: (await import('../images/projects/Coronatime.png')).default,
 		},
 		{
 			name: 'Covid Questionnaire',
@@ -63,7 +64,7 @@ const GetProjects = async () => {
 			slug: 'covid-questionnaire',
 			demo: 'https://covid-questionnaire.vercel.app/',
 			code: 'https://github.com/GeekoIsaGeek/Covid-Questionnaire',
-			image: (await import('../../images/projects/Covid-Questionnaire.png')).default,
+			image: (await import('../images/projects/Covid-Questionnaire.png')).default,
 		},
 		{
 			name: 'Image Gallery',
@@ -71,14 +72,14 @@ const GetProjects = async () => {
 			slug: 'image-gallery',
 			demo: 'https://image-gallery-geeko.vercel.app/',
 			code: 'https://github.com/GeekoIsaGeek/Image-Gallery',
-			image: (await import('../../images/projects/Image-gallery.webp')).default,
+			image: (await import('../images/projects/Image-gallery.webp')).default,
 		},
 		{
 			name: 'Aloha - Online shop (Client)',
 			techs: [React, Firebase, Swiper],
 			demo: 'https://aloha-geeko.vercel.app/',
 			code: 'https://github.com/GeekoIsaGeek/Aloha',
-			image: (await import('../../images/projects/Aloha.webp')).default,
+			image: (await import('../images/projects/Aloha.webp')).default,
 			slug: 'aloha',
 		},
 		{
@@ -86,9 +87,8 @@ const GetProjects = async () => {
 			techs: [Html, Css, Js],
 			demo: 'https://GeekoIsaGeek.github.io/Virtual-Keyboard/',
 			code: 'https://github.com/GeekoIsaGeek/Virtual-Keyboard/',
-			image: (await import('../../images/projects/virtual-keyboard.webp')).default,
+			image: (await import('../images/projects/virtual-keyboard.webp')).default,
 			slug: 'virtual-keyboard',
 		},
 	];
 };
-export default await GetProjects();

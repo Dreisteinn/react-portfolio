@@ -1,5 +1,5 @@
-import styles from './main.module.css';
-import Socials from './socials';
+import styles from './Main.module.css';
+import Socials from './Socials';
 const Main = () => {
 	return (
 		<main className={styles.wrapper}>

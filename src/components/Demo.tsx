@@ -1,10 +1,12 @@
 import { useParams } from 'react-router-dom';
-import List from './projects/projects-list.ts';
 import { Navigate } from 'react-router-dom';
+import useProjectContext from '../hooks/useProjectContext';
 
 const Demo = () => {
 	const { project } = useParams();
-	const targetProject = List.find((item) => item.slug === project);
+	const { projects } = useProjectContext();
+
+	const targetProject = projects.find((item) => item.slug === project);
 
 	if (targetProject && targetProject.slug) {
 		return (
