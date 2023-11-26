@@ -14,7 +14,7 @@ import {
 	SiSocketdotio as SocketIO,
 } from 'react-icons/si';
 import { IoLogoJavascript as Js, IoLogoSass as Sass, IoLogoNodejs as Node } from 'react-icons/io';
-import { Project } from '../components/projects/Project.types';
+import { Project } from '../components/Projects/Project.types';
 
 export const getProjects = async (): Promise<Project[]> => {
 	return [
@@ -22,7 +22,7 @@ export const getProjects = async (): Promise<Project[]> => {
 			name: 'Communicator (Real-time chat app)',
 			slug: 'communicator',
 			techs: [React, Tailwind, Node, Express, SocketIO, Mongo],
-			demo: 'https://youtube.com/embed/i2aJllBWpPg?si=5cEsHTgxBUCYGJj-"',
+			demo: 'https://youtube.com/embed/i2aJllBWpPg?si=5cEsHTgxBUCYGJj-',
 			code: 'https://github.com/GeekoIsaGeek/communicator-front',
 			image: (await import('../images/projects/communicator.png')).default,
 		},

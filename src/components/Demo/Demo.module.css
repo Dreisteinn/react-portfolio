@@ -1,0 +1,35 @@
+.demo_not_found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.demo_not_found > h1 {
+	font-size: 52px;
+}
+.demo_not_found > a {
+	background-color: #363746;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 20px;
+	transition: 0.2s ease-out;
+	margin-top: 44px;
+}
+.demo_not_found > h2 {
+	font-size: 36px;
+}
+.demo_not_found > a:hover {
+	background-color: #2e2e44;
+}
+
+@media (max-width: 960px) {
+	.demo_not_found > h1 {
+		font-size: 40px !important;
+	}
+	.demo_not_found > h2 {
+		font-size: 24px;
+	}
+	.demo_not_found > a {
+		margin-top: 24px;
+		font-size: 16px;
+	}
+}
