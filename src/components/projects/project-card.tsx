@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './projects.module.css';
 
 const Project = (props) => {
@@ -15,7 +16,7 @@ const Project = (props) => {
 				</a>
 				<ul className={styles.techs}>
 					{techs.map((tech, i) => (
-						<li key={i}>{tech}</li>
+						<li key={i}>{React.createElement(tech)}</li>
 					))}
 				</ul>
 			</div>

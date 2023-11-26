@@ -1,6 +1,5 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
-import List from './projects/projects-list';
+import List from './projects/projects-list.ts';
 import { Navigate } from 'react-router-dom';
 
 const Demo = () => {

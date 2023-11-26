@@ -1,6 +1,6 @@
 import Project from './project-card';
 import styles from './projects.module.css';
-import List from './projects-list';
+import List from './projects-list.ts';
 import { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';

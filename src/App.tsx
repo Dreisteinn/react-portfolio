@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import HamburgerToggle from './components/navbar/hamburgerToggle';
 import Main from './components/home/main';
 import Navbar from './components/navbar/navbar';
-import { Routes, Route, Navigate } from 'react-router-dom';
 import About from './components/about/about';
 import Projects from './components/projects/projects';
 import Demo from './components/demo';
