@@ -60,7 +60,7 @@ const About = () => {
 						:<span className={styles.user}>~</span>$ cat bio
 					</h1>
 					<p>
-						Giorgi Kvrivishvili is an Information Technology graduate who decided in 2021 to learn Web Development
+						Giorgi Kvrivishvili is an Information Technology graduate who decided in 2020 to learn Web Development
 						and dive into the field. His knowledge covers the fundamental web concepts and the following
 						technologies: <b>HTML</b>, <b>CSS</b> (Sass,Tailwind), <b>Javascript</b>, <b>Typescript</b>,{' '}
 						<b>React</b>, and <b>Vue</b>. He's mainly focused on the front-end. However, besides building reactive
