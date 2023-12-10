@@ -1,2 +1,5 @@
-import home from './home'
-export const schemaTypes = [home]
+import home from './home';
+import project from './project';
+import about from './about';
+
+export const schemaTypes = [home, project, about];
