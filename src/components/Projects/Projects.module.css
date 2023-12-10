@@ -229,7 +229,7 @@
 		top: 10%;
 	}
 	.project {
-		--image-width: 80vw;
+		--image-width: 90vw;
 		height: var(--image-width);
 	}
 	.project img {

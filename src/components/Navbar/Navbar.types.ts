@@ -1,4 +1,4 @@
 export type Props = {
-	getNavbar: boolean;
-	setNavbar: React.Dispatch<React.SetStateAction<boolean>>;
+	canShowNavbar: boolean;
+	setCanShowNavbar: React.Dispatch<React.SetStateAction<boolean>>;
 };

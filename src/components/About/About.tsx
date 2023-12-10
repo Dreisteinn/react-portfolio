@@ -24,9 +24,9 @@ const skillsAsElements = [
 
 const About = () => {
 	const navigate = useNavigate();
-	const [showTerminal, setShowTerminal] = useState(true);
-	const [maximize, setMaximize] = useState(false);
-	const [minimize, setMinimize] = useState(false);
+	const [canShowTerminal, setCanShowTerminal] = useState(true);
+	const [canMaximize, setCanMaximize] = useState(false);
+	const [canMinimize, setCanMinimize] = useState(false);
 
 	const navigateToProjects = (e: KeyboardEvent) => {
 		if (e.key === 'Enter') {
@@ -36,24 +36,26 @@ const About = () => {
 
 	return (
 		<div className={styles.about}>
-			{showTerminal && (
+			{canShowTerminal && (
 				<div
-					className={`${styles.terminal_wrapper} ${maximize && styles.maximized} ${minimize && styles.minimized}`}
+					className={`${styles.terminal_wrapper} ${canMaximize && styles.maximized} ${
+						canMinimize && styles.minimized
+					}`}
 					tabIndex={-1}
 					onKeyDown={navigateToProjects}
 				>
 					<div className={styles.titlebar_buttons}>
 						<div
 							className={`${styles.close} ${styles.titlebar_button}`}
-							onClick={() => setShowTerminal((prev) => !prev)}
+							onClick={() => setCanShowTerminal((prev) => !prev)}
 						></div>
 						<div
 							className={`${styles.maximize} ${styles.titlebar_button}`}
-							onClick={() => setMaximize((prev) => !prev)}
+							onClick={() => setCanMaximize((prev) => !prev)}
 						></div>
 						<div
 							className={`${styles.minimize} ${styles.titlebar_button}`}
-							onClick={() => setMinimize((prev) => !prev)}
+							onClick={() => setCanMinimize((prev) => !prev)}
 						></div>
 					</div>
 					<h1>
@@ -78,12 +80,12 @@ const About = () => {
 					return <li key={i}>{skill}</li>;
 				})}
 			</ul>
-			{minimize && (
+			{canMinimize && (
 				<img
 					src={terminalLogo}
 					alt='terminal'
 					className={styles.terminal_logo}
-					onClick={() => setMinimize((prev) => !prev)}
+					onClick={() => setCanMinimize((prev) => !prev)}
 				/>
 			)}
 		</div>

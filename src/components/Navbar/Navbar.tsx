@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { Props } from './Navbar.types';
 
-const Navbar = ({ getNavbar, setNavbar }: Props) => {
-	const handleClick = () => setNavbar((prev) => !prev);
+const Navbar = ({ canShowNavbar, setCanShowNavbar }: Props) => {
+	const handleClick = () => setCanShowNavbar((prev) => !prev);
 	return (
-		<div className={getNavbar ? 'navigation active' : 'navigation'}>
+		<div className={canShowNavbar ? 'navigation active' : 'navigation'}>
 			<NavLink to='/' onClick={handleClick}>
 				Home
 			</NavLink>

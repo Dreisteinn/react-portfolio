@@ -98,6 +98,11 @@ a {
 		background-color: #1f1f25b6;
 	}
 }
+@media only screen and (max-width: 1280px) {
+	.navigation {
+		width: 40%;
+	}
+}
 @media only screen and (max-width: 768px) {
 	.nav-toggle {
 		font-size: 1.6rem;
@@ -131,9 +136,10 @@ a {
 	color: #785b6d !important;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
 	.navigation {
-		font-size: 1.6rem;
-		width: 60%;
+		font-size: 2.2rem;
+		width: 100%;
+		background-color: #00000038;
 	}
 }
