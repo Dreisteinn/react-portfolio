@@ -1,13 +1,22 @@
-interface GeneralDoc {
-	_createdAt: string;
-	_id: string;
-	_rev: string;
-	_type: string;
-	_updatedAt: string;
-}
-
-export interface HomePageData extends GeneralDoc {
+export interface HomePageData {
 	greeting: string;
 	name: string;
 	specialty: string;
+}
+
+export interface AboutPageData {
+	bio: {
+		markDefs: [];
+		style: string;
+		_key: string;
+		_type: string;
+		children: {
+			_type: string;
+			text: string;
+			_key: string;
+			marks: [];
+		}[];
+	}[];
+	primaryCommand: string;
+	secondaryCommand: string;
 }

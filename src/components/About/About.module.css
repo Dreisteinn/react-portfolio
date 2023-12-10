@@ -57,7 +57,7 @@ p {
 	text-align: left;
 	color: lightgray;
 }
-p > b {
+p > strong {
 	color: #ad7e9af2;
 }
 p > a {
@@ -103,7 +103,7 @@ p > a {
 	content: '';
 	position: absolute;
 	bottom: 5px;
-	left: 34px;
+	left: 10px;
 	border-bottom: 2.5px white solid;
 	width: 14px;
 	animation: lastletter 1.5s infinite;
@@ -253,7 +253,7 @@ p > a {
 		width: 15px;
 	}
 	.lastlet::after {
-		left: 22px;
+		left: 7px;
 		width: 10px;
 		bottom: 2px;
 	}

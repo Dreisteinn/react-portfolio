@@ -1,7 +1,10 @@
 import { client } from '../../sanity.config';
-import { HomePageData } from '../types/sanity';
+import { AboutPageData, HomePageData } from '../types/sanity';
 
-export const getHomePageData = async (): Promise<HomePageData> => {
-	const homePageData = await client.fetch('*[_type == "home"]');
-	return homePageData;
+export const getHomePageContent = async (): Promise<HomePageData[]> => {
+	return await client.fetch('*[_type == "home"]{greeting, name, specialty}');
+};
+
+export const getAboutPageContent = async (): Promise<AboutPageData[]> => {
+	return await client.fetch('*[_type == "about"]{bio, primaryCommand, secondaryCommand}');
 };

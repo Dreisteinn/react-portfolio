@@ -3,9 +3,6 @@ import { defineConfig } from 'sanity';
 import { schemaTypes } from './src/sanity/schemas';
 import { createClient } from '@sanity/client';
 
-export const singletonActions = new Set(['publish', 'discardChanges', 'restore']);
-export const singletonTypes = new Set(['home', 'about']);
-
 export const config = defineConfig({
 	projectId: 'fb06ufjf',
 	dataset: 'production',

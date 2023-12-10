@@ -6,9 +6,13 @@ import { SiVuedotjs } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import terminalLogo from '../../images/hyper-seeklogo.com.svg';
+import { AboutPageData } from '../../types/sanity';
+import { getAboutPageContent } from '../../services/sanity';
+// import PortableText from 'react-portable-text';
+import { PortableText } from '@portabletext/react';
 
 const skillsAsElements = [
 	<SiTypescript className={styles.typescript} />,
@@ -27,6 +31,7 @@ const About = () => {
 	const [canShowTerminal, setCanShowTerminal] = useState(true);
 	const [canMaximize, setCanMaximize] = useState(false);
 	const [canMinimize, setCanMinimize] = useState(false);
+	const [pageContent, setPageContent] = useState<AboutPageData>();
 
 	const navigateToProjects = (e: KeyboardEvent) => {
 		if (e.key === 'Enter') {
@@ -34,9 +39,17 @@ const About = () => {
 		}
 	};
 
+	useEffect(() => {
+		const fetchData = async () => {
+			const data = await getAboutPageContent();
+			setPageContent(data[0]);
+		};
+		fetchData();
+	}, []);
+
 	return (
 		<div className={styles.about}>
-			{canShowTerminal && (
+			{canShowTerminal && pageContent && (
 				<div
 					className={`${styles.terminal_wrapper} ${canMaximize && styles.maximized} ${
 						canMinimize && styles.minimized
@@ -58,20 +71,16 @@ const About = () => {
 							onClick={() => setCanMinimize((prev) => !prev)}
 						></div>
 					</div>
+
 					<h1>
-						:<span className={styles.user}>~</span>$ cat bio
+						:<span className={styles.user}>~</span>$ {pageContent?.primaryCommand && pageContent?.primaryCommand}
 					</h1>
-					<p>
-						Giorgi Kvrivishvili is an Information Technology graduate who decided in 2020 to learn Web Development
-						and dive into the field. His knowledge covers the fundamental web concepts and the following
-						technologies: <b>HTML</b>, <b>CSS</b> (Sass,Tailwind), <b>Javascript</b>, <b>Typescript</b>,{' '}
-						<b>React</b>, and <b>Vue</b>. He's mainly focused on the front-end. However, besides building reactive
-						client-side apps, he crafts secure REST APIs using <b>Node/Express</b> and <b>Laravel</b>. Giorgi
-						strives to improve and broaden his skill set by working on various kinds of side projects.
-					</p>
+					{pageContent?.bio[0] && <PortableText value={pageContent?.bio[0]} />}
+
 					<h1>
-						:<span className={styles.user}>~</span>$ browse projec
-						<span className={styles.lastlet}>ts</span>
+						:<span className={styles.user}>~</span>${' '}
+						{pageContent?.secondaryCommand && pageContent?.secondaryCommand}
+						<span className={styles.lastlet}></span>
 					</h1>
 				</div>
 			)}
