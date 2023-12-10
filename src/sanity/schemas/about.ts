@@ -2,7 +2,6 @@ export default {
 	title: 'About',
 	name: 'about',
 	type: 'document',
-	__experimental_actions: [],
 	fields: [
 		{
 			title: 'Biography',
@@ -12,7 +11,7 @@ export default {
 		},
 		{
 			title: 'Primary Command',
-			name: 'topmostCommand',
+			name: 'primaryCommand',
 			type: 'string',
 		},
 		{
