@@ -17,14 +17,18 @@ const Main = () => {
 
 	return (
 		<main className={styles.wrapper}>
-			<article>
-				<h3 className={styles.greeting}>{pageContent?.greeting}</h3>
-				<h3 className={styles.me}>
-					I'm <span>{pageContent?.name}</span>
-				</h3>
-				<h4>{pageContent?.specialty}</h4>
-			</article>
-			<Socials />
+			{pageContent && (
+				<>
+					<article>
+						<h3 className={styles.greeting}>{pageContent?.greeting}</h3>
+						<h3 className={styles.me}>
+							I'm <span>{pageContent?.name}</span>
+						</h3>
+						<h4>{pageContent?.specialty}</h4>
+					</article>
+					<Socials links={pageContent?.socialLinks} />
+				</>
+			)}
 		</main>
 	);
 };

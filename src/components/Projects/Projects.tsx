@@ -8,6 +8,8 @@ import 'swiper/css/effect-coverflow';
 import { Scrollbar, Mousewheel, EffectCoverflow } from 'swiper/modules';
 import './swiper.css';
 import useProjectContext from '../../hooks/useProjectContext';
+import { getImageUrl } from '../../../sanity.config';
+import { populateWithIcons } from '../../helpers/populateWithIcons';
 
 const Projects = () => {
 	const [width, setWidth] = useState(window.innerWidth);
@@ -38,15 +40,15 @@ const Projects = () => {
 				}}
 				effect='coverflow'
 			>
-				{projects.map((project, i) => (
+				{projects?.map((project, i) => (
 					<SwiperSlide key={i}>
 						<Project
-							name={project.name}
-							techs={project.techs}
-							demo={project.demo}
-							code={project.code}
-							image={project.image}
-							slug={project.slug}
+							name={project?.name}
+							techs={populateWithIcons(project?.techs)}
+							demo={project?.demo}
+							code={project?.code}
+							image={getImageUrl(project?.image?.asset?._ref)}
+							slug={project?.slug?.current}
 						/>
 					</SwiperSlide>
 				))}

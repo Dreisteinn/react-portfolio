@@ -1,9 +1,6 @@
 import styles from './About.module.css';
-import { SiGnubash, SiReact, SiTypescript } from 'react-icons/si';
+import { SiGnubash, SiReact, SiTypescript, SiLaravel, SiVuedotjs, SiTailwindcss } from 'react-icons/si';
 import { IoLogoJavascript, IoLogoSass } from 'react-icons/io';
-import { SiLaravel } from 'react-icons/si';
-import { SiVuedotjs } from 'react-icons/si';
-import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -11,7 +8,6 @@ import type { KeyboardEvent } from 'react';
 import terminalLogo from '../../images/hyper-seeklogo.com.svg';
 import { AboutPageData } from '../../types/sanity';
 import { getAboutPageContent } from '../../services/sanity';
-// import PortableText from 'react-portable-text';
 import { PortableText } from '@portabletext/react';
 
 const skillsAsElements = [
@@ -84,11 +80,13 @@ const About = () => {
 					</h1>
 				</div>
 			)}
+
 			<ul className={styles.skills}>
 				{skillsAsElements.map((skill, i) => {
 					return <li key={i}>{skill}</li>;
 				})}
 			</ul>
+
 			{canMinimize && (
 				<img
 					src={terminalLogo}

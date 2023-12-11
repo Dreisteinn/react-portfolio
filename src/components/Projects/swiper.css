@@ -10,3 +10,6 @@
 .swiper-scrollbar-drag {
 	background: #47485b !important;
 }
+.swiper {
+	width: 100%;
+}

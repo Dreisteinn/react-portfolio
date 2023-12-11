@@ -1,17 +1,17 @@
 import { useParams } from 'react-router-dom';
 import useProjectContext from '../../hooks/useProjectContext';
-import type { Project } from '../Projects/Project.types';
 import { useEffect, useState } from 'react';
 import DemoNotFound from './NotFound';
+import { ProjectData } from '../../types/sanity';
 
 const Demo = () => {
 	const { project } = useParams();
 	const { projects, isFetching } = useProjectContext();
-	const [targetProject, setTargetProject] = useState<Project>();
+	const [targetProject, setTargetProject] = useState<ProjectData>();
 
 	useEffect(() => {
-		if (projects) {
-			setTargetProject(projects.find((item) => item.slug === project));
+		if (projects.length) {
+			setTargetProject(projects.find((item) => item?.slug?.current === project));
 		}
 	}, [projects, project]);
 

@@ -1,9 +1,9 @@
 import { ReactElement, createContext, useEffect, useState } from 'react';
-import type { Project } from '../components/Projects/Project.types';
-import { getProjects } from '../services/getProjects';
+import { getProjectsData } from '../services/sanity';
+import { ProjectData } from '../types/sanity';
 
 type ProjectContextType = {
-	projects: Project[];
+	projects: ProjectData[];
 	isFetching: boolean;
 };
 
@@ -12,13 +12,13 @@ const defaultValues = { projects: [], isFetching: false };
 export const ProjectContext = createContext<ProjectContextType>(defaultValues);
 
 const ProjectContextProvider = ({ children }: { children: ReactElement }) => {
-	const [projects, setProjects] = useState<Project[]>([]);
+	const [projects, setProjects] = useState<ProjectData[]>([]);
 	const [isFetching, setIsFetching] = useState(false);
 
 	useEffect(() => {
 		setIsFetching(true);
 		const setRetrievedProjects = async () => {
-			const projects = await getProjects();
+			const projects = await getProjectsData();
 			setProjects(projects);
 			setIsFetching(false);
 		};
