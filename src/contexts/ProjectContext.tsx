@@ -19,6 +19,7 @@ const ProjectContextProvider = ({ children }: { children: ReactElement }) => {
 		setIsFetching(true);
 		const setRetrievedProjects = async () => {
 			const projects = await getProjectsData();
+			console.log(projects);
 			setProjects(projects);
 			setIsFetching(false);
 		};

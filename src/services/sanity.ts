@@ -10,5 +10,5 @@ export const getAboutPageContent = async (): Promise<AboutPageData[]> => {
 };
 
 export const getProjectsData = async (): Promise<ProjectData[]> => {
-	return await client.fetch('*[_type == "project"]{name, image, slug, demo, code, techs}');
+	return await client.fetch('*[_type == "project"] | order(_createdAt asc) {name, image, slug, demo, code, techs}');
 };
