@@ -10,7 +10,7 @@ const Demo = () => {
 	const [targetProject, setTargetProject] = useState<ProjectData>();
 
 	useEffect(() => {
-		if (projects.length) {
+		if (projects?.length) {
 			setTargetProject(projects.find((item) => item?.slug?.current === project));
 		}
 	}, [projects, project]);

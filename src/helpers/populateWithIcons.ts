@@ -36,7 +36,7 @@ const icons: { [key: string]: IconType } = {
 };
 
 export const populateWithIcons = (techs: string[]) => {
-	if (!techs.length) {
+	if (!techs?.length) {
 		return [];
 	}
 	return techs.map((tech) => icons[tech.toLowerCase()]).filter((icon) => icon !== undefined);
