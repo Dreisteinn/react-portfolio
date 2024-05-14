@@ -11,6 +11,6 @@ export const getAboutPageContent = async (): Promise<AboutPageData[]> => {
 
 export const getProjectsData = async (): Promise<ProjectData[]> => {
 	return await client.fetch(
-		'*[_type == "project" && !(slug.current in ["covid-questionnaire","covid-statistics","aloha","virtual-keyboard","image-gallery"])] | order(_createdAt asc) {name, image, slug, demo, code, techs}'
+		'*[_type == "project" && !(slug.current in ["covid-questionnaire","covid-statistics","aloha","virtual-keyboard","image-gallery"])] | order(orderIndex asc) {name, image, slug, demo, code, techs}'
 	);
 };

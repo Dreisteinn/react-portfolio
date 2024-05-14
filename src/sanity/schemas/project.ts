@@ -34,5 +34,10 @@ export default {
 			type: 'array',
 			of: [{ type: 'string' }],
 		},
+		{
+			name: 'orderIndex',
+			title: 'Order Index',
+			type: 'number',
+		},
 	],
 };
