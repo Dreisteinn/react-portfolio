@@ -3,7 +3,6 @@ import styles from './Projects.module.css';
 import type { Project } from './Project.types';
 
 const ProjectCard = ({ name, techs, code, demo, image, slug }: Project) => {
-	console.log(demo);
 	return (
 		<li className={styles.project}>
 			<img src={image} alt={name} className={styles.img}></img>
